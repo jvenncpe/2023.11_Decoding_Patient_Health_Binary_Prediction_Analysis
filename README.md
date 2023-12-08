@@ -1,8 +1,7 @@
 #### *Capstone Project: November 2023*
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/bf1829e0-91a2-48a3-a589-a53d518e539a")
-"/></p>
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/bd9cc976-432a-4199-aa6e-4b73585fa6dc")/></p>
 
 # Decoding Patient Health: Binary Prediction Analysis
 
@@ -17,14 +16,12 @@ Capstone project output from "SP801 Statistical Analysis and Modeling Using Exce
 ## Activity
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/22f1b954-0834-4f14-b7cd-735e67bc9dfd")
-"/></p>
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/22f1b954-0834-4f14-b7cd-735e67bc9dfd")/></p>
 
 ## Dataset Context
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/bf1829e0-91a2-48a3-a589-a53d518e539a")
-"/></p>
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/dfa647b9-2c2b-48e2-b344-4c79dcdd1301")/></p>
 
 Each row in the dataset represents a unique patient with different attributes recordeds, potentially in the context of medical diagnostics. The "Failure.binary" column indicates a binary classification for immediate medical attention. 
 
@@ -46,10 +43,6 @@ Each row in the dataset represents a unique patient with different attributes re
 ---
 ## Methodology and Implementation
 ### 1. Perform Exploratory Analysis (Scaling, PCA, Unbalanced)
-
-<p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
-"/></p>
 
 - #### Preprocessing - Loading of Dataset and Exploratory Data Analysis (EDA):
   - Loading of Dataset:
@@ -77,8 +70,13 @@ Each row in the dataset represents a unique patient with different attributes re
 </table>
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/19d5b772-227e-442b-8af8-75242d0f4f06")
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
 "/></p>
+
+> Through checking the binary classification distribution, we were able to found that it is unbalanced and will be preprocessed later at unbalancing as seen below:
+
+<p align="center">
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/0608a9fa-ce3f-4abb-831e-76ea027ad973")/></p>
 
 - #### Preprocessing - Scaling:
   - The primary goal is to normalize features to a uniform scale.
@@ -86,8 +84,9 @@ Each row in the dataset represents a unique patient with different attributes re
   - MinMaxScaler from the sklearn.preprocessing module is utilized to apply consistent scaling across features within the training and test datasets (X_train and X_test).
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/98206479-7450-4c5e-8f3a-b10be0e93d3d")
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/19d5b772-227e-442b-8af8-75242d0f4f06")
 "/></p>
+
 
 - #### Preprocessing - Principal Component Analysis (PCA):
   - PCA, or Principal Component Analysis, serves the purpose of reducing dimensionality within the dataset, aiding in data compression while preserving vital information.
@@ -95,16 +94,18 @@ Each row in the dataset represents a unique patient with different attributes re
   - Using the PCA module from sklearn.decomposition, the scaled training and test datasets are subjected to fitting and transformation for effective dimensionality reduction.
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/18fff10a-6871-4ef0-8a47-c1c7aa822cd6")
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/98206479-7450-4c5e-8f3a-b10be0e93d3d")
 "/></p>
+
+> I settled with n_components as "7" since it can explain 91.41% of the percentage of explained variance. Often, percentages around 70-95% are considered acceptable. When we prioritize interpretability, clarity, or computational efficiency, opting for a lower percentage could be sufficient. Conversely, when precision and comprehensiveness are crucial, aiming for a higher percentage might be necessary.
 
 - #### Preprocessing - Handling Unbalanced Data:
   - This step focuses on addressing class distribution within the training dataset, particularly essential in unbalanced datasets where one class significantly outweighs the other.
   - Utilizing Matplotlib, a pie chart visualizes the distribution of binary classes, offering a clear representation of the dataset's class proportions.
-  - Since the Failure Binary Distribution is unbalanced, we made use of SMOTE to have authentic samples added in the training dataset --- making it balanced.
+  - Since the Failure Binary Distribution is unbalanced, we made use of SMOTE to have authentic samples added in the training dataset making it balanced.
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/18fff10a-6871-4ef0-8a47-c1c7aa822cd6")
 "/></p>
 
 ### 2. Split the Data (Train, Validation, Test)
@@ -116,19 +117,20 @@ Each row in the dataset represents a unique patient with different attributes re
 
 ### 3. Perform 10-Fold Cross-Validation and Grid Search
 
-<p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/3c5987c9-2280-44e1-92fc-a8790f4a54ce")
-"/></p>
-
   - #### 10-fold Cross-Validation:
     - This method evaluates how effectively the model generalizes to new data by dividing the dataset into ten parts. Nine parts are used for training, and one part is for validation, iterating this process ten times. It provides a comprehensive assessment of the model's performance.
 
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9afd53f3-0e1c-4262-851c-b24e68a988d4")
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/3c5987c9-2280-44e1-92fc-a8790f4a54ce")
 "/></p>
+
 
   - #### Grid Search:
     -  A technique that systematically explores diverse parameter combinations within a predefined grid to identify the most optimal parameters for the machine learning model. This process aims to enhance the model's performance by finding the best configuration.
+
+<p align="center">
+<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9afd53f3-0e1c-4262-851c-b24e68a988d4")
+"/></p>
    
 ### 4. Compare the different classification medthods (Logistic Regressin, KNN, SVM, RF, XGBOOST)
   > I have a total of six (6) different classification models due to XGBOOST as I am not sure (from the instructions of the project capstone) if it was referring to the standard gradiant boosting or to the extreme gradiant boosting since based on the course ipnyb handouts, I have not found an extreme gradiant boosting --- only standard gradiant boosting.
@@ -138,101 +140,43 @@ Each row in the dataset represents a unique patient with different attributes re
 
   - #### Accuracy Score Computation: :
     - Calculate the accuracy scores separately for both the training and test datasets to gauge the model's performance on seen and unseen data.
-  
-<p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/04353e1e-938c-4053-87ff-36f7c2d391e7")"/>
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/5025bd17-8afe-409b-b947-f9e1e7eac062")"/>
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/c6034806-855d-488b-bcbc-676d135bb281")"/>
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/47b9815d-ffe0-4cd1-b815-ed5b95b59782")"/>
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9b9cb7d4-91c3-44a4-9005-e9440197de73")"/>
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9dd4054d-3e3d-40fc-bde4-da10f08f0c29")"/>
-</p>
 
   - #### Visualization for Comparison:
     - A column chart can be generated to visually compare and depict the accuracy scores obtained from the training and test sets, providing a clear understanding of the model's performance on both datasets.
 
-### 5. Show evaluation metrics (ROC-AUC, accuracy, f-1 score)
-
 <p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
-"/></p>
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/04353e1e-938c-4053-87ff-36f7c2d391e7" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/5025bd17-8afe-409b-b947-f9e1e7eac062" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/c6034806-855d-488b-bcbc-676d135bb281" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/47b9815d-ffe0-4cd1-b815-ed5b95b59782" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9b9cb7d4-91c3-44a4-9005-e9440197de73" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9dd4054d-3e3d-40fc-bde4-da10f08f0c29" />
+</p>
 
+### 5. Show evaluation metrics (ROC-AUC, accuracy, f-1 score)
   - #### Model Prediction:
     - Utilize the trained model to predict outcomes for the validation or test dataset.
-
-<p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
-"/></p>
-
   - #### Accuracy, ROC-AUC, and F-1 Score Calculation:
     - Determine the accuracy score, measuring the proportion of correctly classified instances.
     - Evaluate the Receiver Operating Characteristic - Area Under Curve (ROC-AUC), highlighting the model's performance across diverse thresholds.
     - Calculate the F-1 score, providing a balanced view between precision and recall and showcasing the model's accuracy in handling imbalanced classes.
-
-<p align="center">
-<img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
-"/></p>
-
   - #### Visualization of Evaluation Metrics:
     - Use a column chart to visually compare the evaluation metrics such as accuracy, ROC-AUC, and F-1 score.
     - Each metric can be represented as a bar in the chart for easy comparison and understanding of their relative values.
 
+<p align="center">
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/722ef72d-8f00-43a5-83a3-9d2543e17f51" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/fec5bd9c-974b-45b3-864f-d1aaee50167c" />
+  <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/18627560-1655-4bb5-a0cb-f5564bb5da5f" />
+</p>
+
+
 ## Results and Discussion
 
-### Sales Growth Over the Years
+Of all the models or techniques, Gradient Boosting turned out to be the best in terms of three important things: (1) how well it correctly identified positive cases, (2) how well it separated different classes, and (3) how often it was right.
 
-![image](https://github.com/jvenncpe/Sales-Performance-Review/assets/35190918/64b44a16-5090-420a-bee8-05414a83263d)
-
-The sales recovery growth from 2021 to 2022 was 1.23%, resulting in an increase of ₱49,532.00. Over the broader period, from 2018 to 2022, the average yearly sales growth was 0.70%, depicting an additional ₱28,220 of sales increase annually.
-
-### Conversion Rate Over the Years
-
-![image](https://github.com/jvenncpe/Sales-Performance-Review/assets/35190918/4d670707-f875-4f35-abd2-ff0cafeebe28)
-
-
-So, the conversion rate from 2018 to 2022 stood at 9.46%, resulting in an increase of 1,529 total orders since inception. The average conversion growth rate during this period was 2.07%, depicting an additional 334 orders per year on average.
-
-### Customer Value Segmentation
-
-![image](https://github.com/jvenncpe/Sales-Performance-Review/assets/35190918/feffbb5e-6e18-4744-8428-91e3184d978c)
-
-
-The top customer segment, constituting 17% of the total customer value segmentation, showcases higher average monetary value (₱450.90) and frequency (14 orders), with the latest purchase recorded on December 31, 2022.
-
-Contrastingly, the immediate attention segment, occupying 21% of the total customer value segmentation, portrays a lower monetary average (₱338.95) and frequency (8 orders), with the latest purchase recorded on December 13, 2022, indicating potential areas needing prompt attention or improvement.
-
-### Sales Representative Value Segmentation
-
-![image](https://github.com/jvenncpe/Sales-Performance-Review/assets/35190918/dcb9649d-bfac-470e-bd66-161b29043b0a)
-
-
-The outstanding sales representative segment, comprising 8% of the total sales representative segmentation pie chart, embodies exceptional attributes:
-
-- "Need Attrition" Accounts: 2
-- "Need Attention" Accounts: 2
-- "At Risk" Accounts: 2
-- "Loyal" Accounts: 6
-- "Top" Accounts: 3
-
-
-Meanwhile, the immediate attention sales representative segment portrays concerning aspects:
-
-- "Need Attention" Accounts: 3
-- "At Risk" Accounts: 5
-- "Loyal" Accounts: 3
-- "Top" Accounts: 2
-
-This segment indicates a higher count of accounts needing attention and at risk, reflecting potential challenges or issues requiring immediate resolution or improvement.
-
+This means that if we have a similar problem or dataset in the future, using Gradient Boosting is a smart choice because it's better at giving us accurate and reliable results among the models or techniques that we have contested.
 
 ---
-![image](https://github.com/jvenncpe/Sales-Performance-Review/assets/35190918/1a3cc5c5-af01-4261-a652-4e1fc1b92375)
-
-### *Overall, this project provided a comprehensive framework for analyzing QR code marketing data, empowering users to glean actionable insights, make informed decisions, and refine marketing strategies.*
-
-> Youtube [Link](https://youtu.be/G5EHkQ5p3M8) for the full run of the story telling.
-
-
-
 # Thank you!
 
