@@ -132,13 +132,13 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/9afd53f3-0e1c-4262-851c-b24e68a988d4")
 "/></p>
    
-### 4. Compare the different classification medthods (Logistic Regressin, KNN, SVM, RF, XGBOOST)
+### 4. Compare the different classification methods (Logistic Regressin, KNN, SVM, RF, XGBOOST)
   > I have a total of six (6) different classification models due to XGBOOST as I am not sure (from the instructions of the project capstone) if it was referring to the standard gradiant boosting or to the extreme gradiant boosting since based on the course ipnyb handouts, I have not found an extreme gradiant boosting --- only standard gradiant boosting.
 
   - #### Model Creation and Training:
     - The classification model is constructed using the training data, and the model is trained on this dataset.
 
-  - #### Accuracy Score Computation: :
+  - #### Accuracy Score Computation:
     - Calculate the accuracy scores separately for both the training and test datasets to gauge the model's performance on seen and unseen data.
 
   - #### Visualization for Comparison:
@@ -161,7 +161,7 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
     - Evaluate the Receiver Operating Characteristic - Area Under Curve (ROC-AUC), highlighting the model's performance across diverse thresholds.
     - Calculate the F-1 score, providing a balanced view between precision and recall and showcasing the model's accuracy in handling imbalanced classes.
   - #### Visualization of Evaluation Metrics:
-    - Use a column chart to visually compare the evaluation metrics such as accuracy, ROC-AUC, and F-1 score.
+    - Use a bar chart to visually compare the evaluation metrics such as accuracy, ROC-AUC, and F-1 score.
     - Each metric can be represented as a bar in the chart for easy comparison and understanding of their relative values.
 
 <p align="center">
@@ -173,9 +173,12 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
 
 ## Results and Discussion
 
-Of all the models or techniques, Gradient Boosting turned out to be the best in terms of three important things: (1) how well it correctly identified positive cases, (2) how well it separated different classes, and (3) how often it was right.
+Of all the models or techniques, Gradient Boosting turned out to be the best in terms of two out of the following:
+- Accuracy (Accuracy Score): This measures the model's overall correctness in its predictions. Gradient Boosting excelled in accurately classifying instances, achieving a higher percentage of correct classifications compared to other techniques. This is essential for assessing the model's general effectiveness.
 
-This means that if we have a similar problem or dataset in the future, using Gradient Boosting is a smart choice because it's better at giving us accurate and reliable results among the models or techniques that we have contested.
+- F-1 Score (Balance between Precision and Recall): This metric captures the balance between precision and recall. Gradient Boosting showcased superior performance by striking a better equilibrium between making precise positive predictions and correctly identifying all positive instances, a crucial aspect when the dataset has class imbalance or when both precision and recall are vital.
+
+This means that if we have a similar problem or dataset in the future, opting for Gradient Boosting is a smart choice as it outperformed other models or techniques in delivering precise and dependable results, establishing itself as a superior choice in our evaluations.
 
 ---
 # Thank you!
