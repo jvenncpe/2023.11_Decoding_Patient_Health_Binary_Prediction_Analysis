@@ -23,7 +23,7 @@ Capstone project output from "SP901 Data Science and Machine Learning Using Pyth
 <p align="center">
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/dfa647b9-2c2b-48e2-b344-4c79dcdd1301")/></p>
 
-Each row in the dataset represents a unique patient with different attributes recordeds, potentially in the context of medical diagnostics. The "Failure.binary" column indicates a binary classification for immediate medical attention. 
+In the dataset, every row signifies a distinct patient, each with a set of various recorded attributes. These attributes pertain to medical diagnostics, capturing diverse information about a patient's health. The column labeled "Failure.binary" serves as a binary classification, potentially signaling the need for immediate medical attention based on certain criteria or indicators within the dataset.
 
 ## Criteria
 
@@ -73,7 +73,7 @@ Each row in the dataset represents a unique patient with different attributes re
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/58830b1c-3f8b-440f-a32e-4a255e718d27")
 "/></p>
 
-> Through checking the binary classification distribution, we were able to found that it is unbalanced and will be preprocessed later at unbalancing as seen below:
+> We've identified an imbalance in the binary classification distribution. In our subsequent preprocessing stage, we'll address this issue by managing the imbalance, as outlined below:
 
 <p align="center">
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/0608a9fa-ce3f-4abb-831e-76ea027ad973")/></p>
