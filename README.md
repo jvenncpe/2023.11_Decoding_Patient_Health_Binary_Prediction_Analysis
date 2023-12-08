@@ -23,7 +23,9 @@ Capstone project output from "SP901 Data Science and Machine Learning Using Pyth
 <p align="center">
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/dfa647b9-2c2b-48e2-b344-4c79dcdd1301")/></p>
 
-In the dataset, every row signifies a distinct patient, each with a set of various recorded attributes. These attributes pertain to medical diagnostics, capturing diverse information about a patient's health. The column labeled "Failure.binary" serves as a binary classification, potentially signaling the need for immediate medical attention based on certain criteria or indicators within the dataset.
+In the dataset, every row signifies a distinct patient, each with a set of various recorded attributes. These attributes pertain to medical diagnostics, capturing diverse information about a patient's health. 
+
+The column labeled "Failure.binary" serves as a binary classification, potentially signaling the need for immediate medical attention based on certain criteria or indicators within the dataset.
 
 ## Criteria
 
@@ -97,7 +99,7 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/98206479-7450-4c5e-8f3a-b10be0e93d3d")
 "/></p>
 
-> I settled with n_components as "7" since it can explain 91.41% of the percentage of explained variance. Often, percentages around 70-95% are considered acceptable. When we prioritize interpretability, clarity, or computational efficiency, opting for a lower percentage could be sufficient. Conversely, when precision and comprehensiveness are crucial, aiming for a higher percentage might be necessary.
+> I settled with n_components as "7" since it can already explain 91.41% of the percentage of explained variance. Often, percentages around 70-95% are considered acceptable. When we prioritize interpretability, clarity, or computational efficiency, opting for a lower percentage could be sufficient. Conversely, when precision and comprehensiveness are crucial, aiming for a higher percentage might be necessary.
 
 - #### Preprocessing - Handling Unbalanced Data:
   - This step focuses on addressing class distribution within the training dataset, particularly essential in unbalanced datasets where one class significantly outweighs the other.
