@@ -173,7 +173,7 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
 
 ## Results and Discussion
 
-Of all the models or techniques, Gradient Boosting turned out to be the best in terms of two out of the following:
+Of all the models or techniques, Gradient Boosting turned out to be the best in terms of the following:
 - Accuracy (Accuracy Score): This measures the model's overall correctness in its predictions. Gradient Boosting excelled in accurately classifying instances, achieving a higher percentage of correct classifications compared to other techniques. This is essential for assessing the model's general effectiveness.
 
 - F-1 Score (Balance between Precision and Recall): This metric captures the balance between precision and recall. Gradient Boosting showcased superior performance by striking a better equilibrium between making precise positive predictions and correctly identifying all positive instances, a crucial aspect when the dataset has class imbalance or when both precision and recall are vital.
