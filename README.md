@@ -80,8 +80,8 @@ In the dataset, every row signifies a distinct patient, each with a set of vario
 
 - #### Preprocessing - Scaling:
   - The primary goal is to normalize features to a uniform scale.
-  - We perform data splitting and "early column dropping" to enforce a clear separation between the training and testing datasets to prevent any inadvertent mixing of the two sets during subsequent preprocessing.
-  - MinMaxScaler from the sklearn.preprocessing module is utilized to apply consistent scaling across features within the training and test datasets (X_train and X_test).
+  - However, we need to perform data splitting and "column dropping" to enforce a clear separation between the training and testing datasets to prevent any inadvertent mixing of the two sets during subsequent preprocessing.
+  - MinMaxScaler from the sklearn.preprocessing module is then utilized to apply consistent scaling across features within the training and test datasets (X_train and X_test).
 
 <p align="center">
 <img src="https://github.com/jvenncpe/2023.11-Decoding-Patient-Health-Binary-Prediction-Analysis/assets/35190918/19d5b772-227e-442b-8af8-75242d0f4f06")
