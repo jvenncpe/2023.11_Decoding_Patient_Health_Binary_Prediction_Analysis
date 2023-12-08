@@ -5,7 +5,7 @@
 
 # Decoding Patient Health: Binary Prediction Analysis
 
-Capstone project output from "SP901 Data Science and Machine Learning Using Python" facilitated by Project SPARTA from Development Academy of the Philippines. The course aims to equip participants with practical skills in data science and machine learning using Python libraries. Learners explore algorithm implementation and identify the most suitable analytical techniques for specific business needs in the capstone project output. of '.
+The output is the culmination of the Capstone project under "SP901 Data Science and Machine Learning Using Python," orchestrated by Project SPARTA from the Development Academy of the Philippines. This comprehensive course is designed to furnish participants with hands-on expertise in data science and machine learning through Python libraries. Students delve into algorithm implementation and discern the most fitting analytical techniques tailored to meet distinct business requirements.
 
 ## Overall Peer Grade Assessment
 
