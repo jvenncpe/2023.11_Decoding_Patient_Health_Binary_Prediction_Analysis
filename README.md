@@ -5,7 +5,7 @@
 
 # Decoding Patient Health: Binary Prediction Analysis
 
-Capstone project output from "SP801 Statistical Analysis and Modeling Using Excel" facilitated by Project SPARTA from Development Academy of the Philippines. The course aims to equip participants with practical skills in data science and machine learning using Python libraries. Learners explore algorithm implementation and identify the most suitable analytical techniques for specific business needs in the capstone project output of 'SP901 Data Science and Machine Learning Using Python.
+Capstone project output from "SP901 Data Science and Machine Learning Using Python" facilitated by Project SPARTA from Development Academy of the Philippines. The course aims to equip participants with practical skills in data science and machine learning using Python libraries. Learners explore algorithm implementation and identify the most suitable analytical techniques for specific business needs in the capstone project output. of '.
 
 ## Overall Peer Grade Assessment
 
